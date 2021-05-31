@@ -4,6 +4,7 @@ Can you spot the mistake here?
 
 //////////////////////////////////////////////////////////////
  Adding 2 rational numbers can work like this
+ ````
 RationalNumber RationalNumber::operator+(const RationalNumber &r) const {
 	RationalNumber A;
 	int a1 = this->a;
@@ -29,8 +30,10 @@ RationalNumber RationalNumber::operator+(const float& decimal) const {
 	RationalNumber A(static_cast<double>(decimal));
 	return *this + A;
 }
+````
 //////////////////////////////////////////////////////////////////////
 But, I am not getting the desired output from this function. The following is the debug window.
+````
 ::::::::::::  Arithmetic Operators  :::::::::::::::
 -----------------------------------------------------
 (1/2)	+	(1/2)	=	(1/1)
@@ -42,7 +45,9 @@ But, I am not getting the desired output from this function. The following is th
 3	+	(1/2)	=	(9/2)
 -----------------------------------------------------
 ////////////////////////////////////////////////////////////////////
+````
 Below is the function I made to get this output.
+````
 void math_plus() {	
         RationalNumber a1 (1,2);
 	RationalNumber sum = (a1 + a1);
@@ -63,4 +68,5 @@ void math_plus() {
 	cout << a1 << "\t+\t" << random3 << "\t=\t" << sum << endl;
 	cout << random << "\t+\t" << a1 << "\t=\t" <<  sum << endl;
 }
+````
 ////////////////////////////////////////////////////////////////////
