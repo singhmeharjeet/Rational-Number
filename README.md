@@ -44,8 +44,9 @@ But, I am not getting the desired output from this function. The following is th
 (1/2)	+	4	=	(9/2)
 3	+	(1/2)	=	(9/2)
 -----------------------------------------------------
-////////////////////////////////////////////////////////////////////
 ````
+////////////////////////////////////////////////////////////////////
+
 Below is the function I made to get this output.
 ````
 void math_plus() {	
